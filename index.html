@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista dell'acqua</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="title">
+        <h1>Lista Acqua</h1>
+    </div>
+    <div class="deadline">
+        <h6>Scadenza: 04/12/2023</h6>
+        <img src="./icon/pencil.svg" alt="Modifica">
+        
+    </div>
+    <div class="form">
+        <form action="main.js">
+            <div id="name-field">
+                <label for="name">Nome e cognome</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="list">
+                <div class="Room">
+                    <label for="Number_room">Numero Stanza</label>
+                    <input type="number" name="Number_room" id="Number_room">
+                </div>
+                <div class="Water">
+                    <label for="Number_water">Numero Casse</label>
+                    <select name="Number_water" id="Number_water">
+                        <option value="1">1</option>
+                        <option value="1">2</option>
+                        <option value="1">3</option>
+                        <option value="1">4</option>
+                        <option value="1">5</option>
+                        <option value="1">6</option>
+                    </select>
+                </div>
+            </div>
+            <div class="submit">
+                <input type="submit" value="Conferma">
+            </div>
+        </form>
+    </div>
+
+    <table id="tabella">
+        <thead>
+          <tr>
+            <th>N. Stanza</th>
+            <th>Nome e Cognome</th>
+            <th>N. Casse</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Le righe verranno aggiunte dinamicamente con JavaScript -->
+        </tbody>
+    </table>
+    <div class="total">
+        <h4>Totale:</h4>
+        <h4 id="counter">0</h4>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
